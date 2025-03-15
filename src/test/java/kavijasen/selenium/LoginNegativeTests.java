@@ -39,6 +39,8 @@ public class LoginNegativeTests {
 
         passwordInput.clear();
         passwordInput.sendKeys(password);
+
+        driver.findElement(By.id("login-button")).click();
     }
 
 

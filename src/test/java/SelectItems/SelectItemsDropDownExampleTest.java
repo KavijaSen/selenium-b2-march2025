@@ -67,6 +67,7 @@ public class SelectItemsDropDownExampleTest {
 
             Select selColour = new Select(multiselect);
 
+
             selColour.selectByIndex(2);
             selColour.selectByValue("red");
             selColour.selectByVisibleText("Green");
@@ -74,6 +75,11 @@ public class SelectItemsDropDownExampleTest {
             selColour.deselectByIndex(2);
             selColour.deselectAll();
 
+            // Retrieving selected options-Can use if needed. After retrieving, you can use assertions to see
+            //whether the selection is correct
+            List<WebElement> selectedOptions = selColour.getAllSelectedOptions();
+
         }
+
 
     }

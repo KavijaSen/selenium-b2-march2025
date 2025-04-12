@@ -8,7 +8,7 @@ public class LoginPage {
     private final WebDriver driver;
     private ActionBot actionBot;
 
-    //Define elements with By (Web elements)
+
     private final By byUsername = By.id ("user-name");
     private final By byPassword = By.id("password");
     private final By byLoginButton = By.id("login-button");

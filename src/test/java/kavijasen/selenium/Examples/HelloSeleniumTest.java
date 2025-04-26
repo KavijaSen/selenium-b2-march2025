@@ -31,7 +31,7 @@ public class HelloSeleniumTest {
         driver.findElement(By.id("login-button")).click();
 
         // Add product to cart
-        addProductToCart(driver, "Sauce Labs Backpack");
+        //addProductToCart(driver, "Sauce Labs Backpack");
 
         WebElement element = driver.findElement(new ByText("Sauce Labs Backpack"));
 
@@ -42,8 +42,4 @@ public class HelloSeleniumTest {
         driver.quit();
     }
 
-    private void addProductToCart(WebDriver driver, String productName) {
-        String xpathButton = String.format("//div[text()='%s']/ancestor::div[@data-test='inventory-item']/descendant::button", productName);
-        driver.findElement(By.xpath(xpathButton)).click();
-    }
 }
